@@ -178,10 +178,10 @@ let result1= database.once('open', retrieveBlocks);
 
  
 
-var port = 5000;
-app.listen(port, function(error) {
+//var port = 5000;
+app.listen(dbconfig.expressPort, function(error) {
     if (error) throw error;
-    console.log("Express server listening on port", port);
+    console.log("Express server listening on port", dbconfig.expressPort);
 
 
 });
