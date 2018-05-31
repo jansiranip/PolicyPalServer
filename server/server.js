@@ -73,7 +73,7 @@ async function retrieveBlocks() {
 
         console.log(results);
         const tempBlock = parseInt(startBlock) + 20;
-        const serviceURL = `https://api.etherscan.io/api?module=account&action=txlist&address=${address}&startblock=${startBlock}&endblock=${tempBlock}&sort=desc`;
+        const serviceURL = `https://api.etherscan.io/api?module=account&action=txlist&address=${address}&startblock=${startBlock}&endblock=${endBlock}&sort=desc`;
         axios.get(serviceURL)
             .then((response) => {
                 //console.log(response.data);
