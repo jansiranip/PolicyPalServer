@@ -5,7 +5,7 @@ var config = {
 	mongodb: {
 			defaultDatabase: "POLICYPAL",
 			defaultCollection: "transactions",
-			defaultUri: process.env.MONGOLAB_URI
+			defaultUri: process.env.MONGODB_URI
 		}
 	
 };
