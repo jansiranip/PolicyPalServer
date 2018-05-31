@@ -5,7 +5,7 @@ var config = {
 	mongodb: {
 			defaultDatabase: "POLICYPAL",
 			defaultCollection: "transactions",
-			defaultUri: "mongodb://localhost:27017/POLICYPAL"
+			defaultUri: process.env.MONGOLAB_URI
 		}
 	
 };
